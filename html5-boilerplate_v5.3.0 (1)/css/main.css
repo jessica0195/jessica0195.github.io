@@ -135,15 +135,14 @@ body {
 	
 	.navmenu li{
 		list-style-type: none;	
-		margin: auto;		
-		padding: 200px 100px;
+		margin: 0 auto;		
 		line-height: 300%;	
 	}
 	
 	.navmenu ul {
     list-style-type: none;
-    padding: 0px auto;
-    width: 0px 40px;
+	padding: 10px 10px 10px 60px;	
+
 } 
 	.navmenu li a{
 		background-color: #fad315;;
@@ -152,11 +151,11 @@ body {
 		font-size: 30px;
 		font-family: Trajan Pro;
 		padding: 40px 10px 40px 10px;
-		width: 258px;
+		width: 380px;
 		height: 70px;
 		text-align: center;	
 		color: #ffffff;	
-		margin: 0px auto;	
+		margin: auto -60px;	
 			
 	}
 
@@ -200,7 +199,7 @@ body {
 	
 	.navmenu ul {
 		margin: 0px auto;
-		margin-left: 50px;
+		margin-left: 20px;
 		margin-top: 1px;
 		margin-right: 0px;
 		padding: auto;
@@ -552,7 +551,7 @@ wrapper {
 }
 
 .content-box a {
-  color: #black;
+  color: #ffffff;
 }
 
 .hidden {
@@ -562,8 +561,8 @@ wrapper {
 .btn-close {
   position: absolute;
   top: 5px;
-  right: 10px;
-  font-family: trag, Arial, sans-serif;
+  right: 40px;
+  font-family: Trajan Pro, serif;
   text-decoration: none;
-  font-size: 24px
+  font-size: 50px
 }
