@@ -1,0 +1,569 @@
+/*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+html {
+	height: 100%;
+}
+
+body {
+	background-color: black;
+	color: white;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+	
+	
+.info {
+/*	   width: 300px;
+	   height: 480px;*/
+	   font-size: 15px;
+	   background-color: none);
+	   margin: auto;
+	   margin-left: auto;
+	   margin-right: auto;
+	   color: #FFFFFF;	
+	   text-align: center;
+	 
+	}
+	
+	.logo {
+		display: block;
+		margin: 40px auto;
+		padding: 5px;
+		
+	}
+		
+
+/* VERTICAL NAV MENU CODE */
+
+	.navmenu {	
+		text-align: center;	
+	}
+	
+	
+	.navmenu li{
+		list-style-type: none;	
+		margin: auto;		
+		padding: 200px 100px;
+		line-height: 300%;	
+	}
+	
+	.navmenu ul {
+    list-style-type: none;
+    padding: 0px auto;
+    width: 0px 40px;
+} 
+	.navmenu li a{
+		background-color: #fad315;;
+		text-decoration: none;
+		display: block;
+		font-size: 30px;
+		font-family: Trajan Pro;
+		padding: 40px 10px 40px 10px;
+		width: 258px;
+		height: 70px;
+		text-align: center;	
+		color: #ffffff;	
+		margin: 0px auto;	
+			
+	}
+
+	.navmenu a:hover {
+		background-color: #000000;
+			
+	}
+	
+	.info{
+/*		width: 278px;
+		height: 980px;*/
+		float: center;
+		clear: center;
+		margin: 0 auto;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	
+
+/* HORIZONAL NAV MENU CODE */
+	
+	.navmenu {
+		display: block;
+		margin: 0 auto;
+		float: center;
+		padding: 10px 10px;
+	
+	}	
+	
+	.navmenu li {
+		display: block;
+		float: left;
+		padding: 10px 10px;
+		margin: 0px auto;
+		margin-left: 100px;
+		margin-right: 10px;
+		
+		
+	}
+	
+	.navmenu ul {
+		margin: 0px auto;
+		margin-left: 50px;
+		margin-top: 1px;
+		margin-right: 0px;
+		padding: auto;
+		 
+	}
+	
+	
+	.info{
+/*		width: 500px;
+		height: 500px;*/
+		max-width: 800px;
+		float: center;
+		clear: center;
+		padding-top: 1px;
+    	padding-right: 30px;
+    	padding-bottom: 30px;
+    	padding-left: 30px;
+	}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers:
+ */
+
+.hidden {
+    display: none;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+a.pagelink {
+	font-size: 30px;
+	color: #ffffff;
+    background-color: #fad315;
+    padding: 15px 305px;
+    text-align: center;	
+    display: inline-block;
+	text-decoration: none;
+	}
+	
+
+h1 {
+    color: #fad315;
+    font-family: Trajan Pro;
+    font-size: 32px;
+	line-height: 120%;
+}
+
+h2 {
+    color: #fad315;
+    font-family: Trajan Pro;
+    font-size: 45px;
+	line-height: 120%;
+}
+
+h3 {
+    color: #fad315;
+    font-family: helvetica;
+    font-size: 20px;
+	line-height: 100%;
+}
+
+h4 {
+    color: #fad315;
+    font-family: helvetica;
+    font-size: 15px;
+	line-height: 100%;
+}
+
+h5 {
+    color: #ffffff;
+    font-family: helvetica;
+    font-size: 15px;
+	line-height: 100%;
+}
+
+h6 {
+    color: #ffffff;
+    font-family: helvetica;
+    font-size: 20px;
+	line-height: 100%;
+}
+
+
+p  {
+    color: #ffffff;
+    font-family: helvetica;
+    font-size: 120%;
+	line-height: 150%;
+
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+  
+}
+
+
+ li{
+    margin: 0;
+    padding: 0;
+   
+}
+
+blockquote {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 40px;
+    margin-right: 40px;
+	font-style: italic;
+}
+
+address { 
+    display: block;
+    font-style: italic;
+}
+
+
+ol {
+    display: block;
+    list-style-type: decimal;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+}
+
+.map {
+	width: 100%;
+	max-width: 700px;
+	height: 300px;	
+}
+
+wrapper {
+    width: 1500px;
+    margin: auto;
+}
+
+.fullscreen-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+}
+
+.fullscreen-bg__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    height: 300%;
+    top: -100%;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    width: 300%;
+    left: -100%;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .fullscreen-bg__video {
+    display: none;
+  }
+}
+
+.content-box {
+  background-color: rgba(0,0,0,0.9);
+  position: absolute;
+  top: 50px;
+  right: 30px;
+  bottom: 30px;
+  left: 30px;
+  padding: 30px;
+  color: white;
+  overflow: scroll;
+}
+
+.content-box a {
+  color: #black;
+}
+
+.hidden {
+  display: none;
+}
+
+.btn-close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-family: trag, Arial, sans-serif;
+  text-decoration: none;
+  font-size: 24px
+}
